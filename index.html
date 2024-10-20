@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+				<div class="navbar-nav mx-auto">
+					<a class="nav-link active mr-4" href="#">Form <span class="sr-only">(current)</span></a>
+					<a class="nav-link mr-4" href="list.html">Data</a>
+					<a class="nav-link" href="leaderboard.html">Leaderboard</a>
+				</div>
+			</div>
+		</nav>		
+	</head>
+    <body>
+        <title>Form</title>
+		    <!-- Bootstrap CSS -->
+			<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="style.css">
+    </body>
+
+    <div class="container mt-5">
+        <form method="post">
+			<h1>Pilih Kelas</h1>
+
+            <div class="form-group">
+                <label for="selectkelas">Kelas</label>
+                <select class="form-control" name="selectkelas" id="selectkelas">
+                    <option value="X AK 1">X AK 1</option>
+                    <option value="X AK 2">X AK 2</option>
+                    <option value="X BR 1">X BR 1</option>
+                    <option value="X BR 2">X BR 2</option>
+                    <option value="X DKV">X DKV</option>
+                    <option value="X MP">X MP</option>
+                    <option value="X PPLG 1">X PPLG 1</option>
+                    <option value="X PPLG 2">X PPLG 2</option>
+                    <option value="XI AK 1">XI AK 1</option>
+                    <option value="XI AK 2">XI AK 2</option>
+                    <option value="XI BR 1">XI BR 1</option>
+                    <option value="XI BR 2">XI BR 2</option>
+                    <option value="XI DKV">XI DKV</option>
+                    <option value="XI MP 1">XI MP 1</option>
+                    <option value="XI MP 2">XI MP 2</option>
+                    <option value="XI RPL">XI RPL</option>
+                    <option value="XII AK 1">XII AK 1</option>
+                    <option value="XII AK 2">XII AK 2</option>
+                    <option value="XII BR">XII BR</option>
+                    <option value="XII DKV">XII DKV</option>
+                    <option value="XII MP 1">XII MP 1</option>
+                    <option value="XII MP 2">XII MP 2</option>
+                    <option value="XII RPL">XII RPL</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="getkelas()">Submit</button>
+
+        </form>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src = "index.js"></script>
+</html>

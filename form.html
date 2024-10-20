@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+			<div class="navbar-nav mx-auto">
+				<a class="nav-link active mr-4" href="#">Form <span class="sr-only">(current)</span></a>
+				<a class="nav-link mr-4" href="list.html">Data</a>
+				<a class="nav-link" href="leaderboard.html">Leaderboard</a>
+			</div>
+		</div>
+	</nav>		
+</head>
+
+<script>
+	// In form.php, retrieve the value from the URL
+	function showkelas2() {
+		var urlParams = new URLSearchParams(window.location.search);
+		var kelas = urlParams.get('kelas');
+
+		// Additional actions based on kelas value can be performed here
+
+		document.getElementById("kelasText").innerHTML = kelas;
+	}
+
+	// Call showkelas on page load
+	window.onload = function() {
+		showkelas();
+		showkelas2();
+	};
+</script>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <form method="post">
+			<h1 id="kelasText"></h1>
+
+            <input type="date" name="tanggal" id="tanggal" hidden/>
+
+            <div class="form-group">
+                <label for="kelas" class="d-none">Kelas</label>
+                <select class="form-control d-none" name="kelas" id="kelas">
+                    <option></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <select class="form-control" name="nama" id="nama"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="pelanggaran1">Pelanggaran 1</label>
+                <select class="form-control" name="pelanggaran1" id="pelanggaran1">
+                    <option value="Kaos Kaki">Kaos Kaki</option>
+                    <option value="Sepatu">Sepatu</option>
+                    <option value="Gesper">Gesper</option>
+                    <option value="Topi">Topi</option>
+                    <option value="Dasi">Dasi</option>
+                    <option value="Celana">Celana</option>
+                    <option value="Rok">Rok</option>
+                    <option value="Hijab">Hijab</option>
+                    <option value="Almet">Almet</option>
+                    <option value="Baju">Baju</option>
+                    <option value="Ring">Ring</option>
+                    <option value="Make Up">Make Up</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pelanggaran2">Pelanggaran 2</label>
+                <select class="form-control" name="pelanggaran2" id="pelanggaran2">
+                    <option value="---">---</option>
+                    <option value="Kaos Kaki">Kaos Kaki</option>
+                    <option value="Sepatu">Sepatu</option>
+                    <option value="Gesper">Gesper</option>
+                    <option value="Topi">Topi</option>
+                    <option value="Dasi">Dasi</option>
+                    <option value="Celana">Celana</option>
+                    <option value="Rok">Rok</option>
+                    <option value="Hijab">Hijab</option>
+                    <option value="Almet">Almet</option>
+                    <option value="Baju">Baju</option>
+                    <option value="Ring">Ring</option>
+                    <option value="Make Up">Make Up</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pelanggaran3">Pelanggaran 3</label>
+                <select class="form-control" name="pelanggaran3" id="pelanggaran3">
+                    <option value="---">---</option>
+                    <option value="Kaos Kaki">Kaos Kaki</option>
+                    <option value="Sepatu">Sepatu</option>
+                    <option value="Gesper">Gesper</option>
+                    <option value="Topi">Topi</option>
+                    <option value="Dasi">Dasi</option>
+                    <option value="Celana">Celana</option>
+                    <option value="Rok">Rok</option>
+                    <option value="Hijab">Hijab</option>
+                    <option value="Almet">Almet</option>
+                    <option value="Baju">Baju</option>
+                    <option value="Ring">Ring</option>
+                    <option value="Make Up">Make Up</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="save()">SUBMIT</button>
+
+        </form>
+
+        <div class="modal" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </div>
+                  <p class="text-center mt-2">Saving...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Bootstrap JS and other dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Firebase JS SDK (Include your Firebase configuration) -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
