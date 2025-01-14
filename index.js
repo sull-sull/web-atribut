@@ -1497,7 +1497,33 @@ function displayData() {
   }
 }
 
-function displayLeaderboard() {
+// Memuat data tahun secara dinamis ke dropdown filter
+function loadAvailableYears() {
+  database.ref().once('value').then(snapshot => {
+    const data = snapshot.val();
+    const yearSet = new Set();
+
+    // Ambil tahun dari setiap tanggal
+    for (const tanggal in data) {
+      if (data.hasOwnProperty(tanggal)) {
+        const year = tanggal.split('-')[0];
+        yearSet.add(year);
+      }
+    }
+
+    // Tambahkan opsi tahun ke dropdown
+    const filterYear = document.getElementById('filterYear');
+    yearSet.forEach(year => {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      filterYear.appendChild(option);
+    });
+  });
+}
+
+// Fungsi untuk memuat dan memfilter leaderboard
+function displayLeaderboard(filterMonth = "all", filterYear = "all") {
   var dataRef = database.ref();
   var dataContainer = document.getElementById('displayLeaderboard');
 
@@ -1508,32 +1534,38 @@ function displayLeaderboard() {
 
       for (const tanggal in data) {
         if (data.hasOwnProperty(tanggal)) {
+          const [year, month] = tanggal.split('-');
           const kelasData = data[tanggal];
-          for (const kelas in kelasData) {
-            if (kelasData.hasOwnProperty(kelas)) {
-              const namaPelanggaranData = kelasData[kelas];
-              for (const nama in namaPelanggaranData) {
-                if (namaPelanggaranData.hasOwnProperty(nama)) {
-                  const pelanggaran1 = namaPelanggaranData[nama].pelanggaran1;
-                  const pelanggaran2 = namaPelanggaranData[nama].pelanggaran2;
-                  const pelanggaran3 = namaPelanggaranData[nama].pelanggaran3;
 
-                  const pelanggaranList = [
-                    { jenis: pelanggaran1, tanggal },
-                    { jenis: pelanggaran2, tanggal },
-                    { jenis: pelanggaran3, tanggal }
-                  ].filter(p => p.jenis !== '---');
+          // Filter berdasarkan bulan dan tahun
+          if ((filterYear === 'all' || filterYear === year) &&
+              (filterMonth === 'all' || filterMonth === month)) {
+            for (const kelas in kelasData) {
+              if (kelasData.hasOwnProperty(kelas)) {
+                const namaPelanggaranData = kelasData[kelas];
+                for (const nama in namaPelanggaranData) {
+                  if (namaPelanggaranData.hasOwnProperty(nama)) {
+                    const pelanggaran1 = namaPelanggaranData[nama].pelanggaran1;
+                    const pelanggaran2 = namaPelanggaranData[nama].pelanggaran2;
+                    const pelanggaran3 = namaPelanggaranData[nama].pelanggaran3;
 
-                  if (!namaInfo[nama]) {
-                    namaInfo[nama] = {
-                      kelas: kelas,
-                      pelanggaran: [],
-                      totalPelanggaran: 0
-                    };
+                    const pelanggaranList = [
+                      { jenis: pelanggaran1, tanggal },
+                      { jenis: pelanggaran2, tanggal },
+                      { jenis: pelanggaran3, tanggal }
+                    ].filter(p => p.jenis !== '---');
+
+                    if (!namaInfo[nama]) {
+                      namaInfo[nama] = {
+                        kelas: kelas,
+                        pelanggaran: [],
+                        totalPelanggaran: 0
+                      };
+                    }
+
+                    namaInfo[nama].pelanggaran.push(...pelanggaranList);
+                    namaInfo[nama].totalPelanggaran += pelanggaranList.length;
                   }
-
-                  namaInfo[nama].pelanggaran.push(...pelanggaranList);
-                  namaInfo[nama].totalPelanggaran += pelanggaranList.length;
                 }
               }
             }
@@ -1567,7 +1599,7 @@ function displayLeaderboard() {
         `;
       });
 
-      dataContainer.innerHTML = leaderboardHTML;
+      dataContainer.innerHTML = leaderboardHTML || 'No data available.';
     })
     .catch(error => {
       console.error("Error fetching data:", error);
@@ -1575,7 +1607,99 @@ function displayLeaderboard() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', displayLeaderboard);
+// Fungsi untuk menangani filter bulan dan tahun
+function filterLeaderboard() {
+  const selectedMonth = document.getElementById('filterMonth').value;
+  const selectedYear = document.getElementById('filterYear').value;
+  displayLeaderboard(selectedMonth, selectedYear);
+}
+
+// Muat data awal dan dropdown tahun
+document.addEventListener('DOMContentLoaded', () => {
+  loadAvailableYears();
+  displayLeaderboard();
+});
+
+// ga dipake
+// function displayLeaderboard() {
+//   var dataRef = database.ref();
+//   var dataContainer = document.getElementById('displayLeaderboard');
+
+//   dataRef.once('value')
+//     .then(snapshot => {
+//       const data = snapshot.val();
+//       var namaInfo = {};
+
+//       for (const tanggal in data) {
+//         if (data.hasOwnProperty(tanggal)) {
+//           const kelasData = data[tanggal];
+//           for (const kelas in kelasData) {
+//             if (kelasData.hasOwnProperty(kelas)) {
+//               const namaPelanggaranData = kelasData[kelas];
+//               for (const nama in namaPelanggaranData) {
+//                 if (namaPelanggaranData.hasOwnProperty(nama)) {
+//                   const pelanggaran1 = namaPelanggaranData[nama].pelanggaran1;
+//                   const pelanggaran2 = namaPelanggaranData[nama].pelanggaran2;
+//                   const pelanggaran3 = namaPelanggaranData[nama].pelanggaran3;
+
+//                   const pelanggaranList = [
+//                     { jenis: pelanggaran1, tanggal },
+//                     { jenis: pelanggaran2, tanggal },
+//                     { jenis: pelanggaran3, tanggal }
+//                   ].filter(p => p.jenis !== '---');
+
+//                   if (!namaInfo[nama]) {
+//                     namaInfo[nama] = {
+//                       kelas: kelas,
+//                       pelanggaran: [],
+//                       totalPelanggaran: 0
+//                     };
+//                   }
+
+//                   namaInfo[nama].pelanggaran.push(...pelanggaranList);
+//                   namaInfo[nama].totalPelanggaran += pelanggaranList.length;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+
+//       let leaderboardArray = Object.entries(namaInfo).map(([nama, info]) => ({
+//         nama,
+//         kelas: info.kelas,
+//         totalPelanggaran: info.totalPelanggaran,
+//         pelanggaran: info.pelanggaran
+//       }));
+
+//       leaderboardArray.sort((a, b) => b.totalPelanggaran - a.totalPelanggaran);
+
+//       let leaderboardHTML = '';
+//       leaderboardArray.forEach((entry, index) => {
+//         leaderboardHTML += `
+//           <div class="card mb-3">
+//             <div class="card-body">
+//               <h5 class="card-title">${index + 1}. ${entry.nama}</h5>
+//               <h6 class="card-subtitle mb-2 text-muted">Kelas: ${entry.kelas}</h6>
+//               <p class="card-text">Total Pelanggaran: ${entry.totalPelanggaran}x</p>
+//               <h6>Detail Pelanggaran:</h6>
+//               <ul>
+//                 ${entry.pelanggaran.map(p => `<li>${p.tanggal}: ${p.jenis}</li>`).join('')}
+//               </ul>
+//             </div>
+//           </div>
+//         `;
+//       });
+
+//       dataContainer.innerHTML = leaderboardHTML;
+//     })
+//     .catch(error => {
+//       console.error("Error fetching data:", error);
+//       dataContainer.innerHTML = "Terjadi kesalahan saat mengambil data.";
+//     });
+// }
+
+// document.addEventListener('DOMContentLoaded', displayLeaderboard);
 
 
 

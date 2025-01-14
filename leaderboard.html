@@ -24,11 +24,43 @@
       <div class="col"></div>
       <div class="col-10">
         <h1>Leaderboard</h1>
+  
+        <!-- Filter Bulan -->
+        <select
+          id="filterMonth"
+          class="form-control mb-3"
+          onchange="filterLeaderboard()"
+        >
+          <option value="all">Semua Bulan</option>
+          <option value="01">Januari</option>
+          <option value="02">Februari</option>
+          <option value="03">Maret</option>
+          <option value="04">April</option>
+          <option value="05">Mei</option>
+          <option value="06">Juni</option>
+          <option value="07">Juli</option>
+          <option value="08">Agustus</option>
+          <option value="09">September</option>
+          <option value="10">Oktober</option>
+          <option value="11">November</option>
+          <option value="12">Desember</option>
+        </select>
+  
+        <!-- Filter Tahun -->
+        <select
+          id="filterYear"
+          class="form-control mb-3"
+          onchange="filterLeaderboard()"
+        >
+          <option value="all">Semua Tahun</option>
+          <!-- Tambahkan opsi tahun secara dinamis -->
+        </select>
+  
         <div class="card card-body" id="displayLeaderboard"></div>
       </div>
       <div class="col"></div>
     </div>
-  </div>
+  
 
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
