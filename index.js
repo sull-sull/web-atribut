@@ -1369,11 +1369,15 @@ function save() {
   var pelanggaran1 = document.getElementById('pelanggaran1').value
   var pelanggaran2 = document.getElementById('pelanggaran2').value
   var pelanggaran3 = document.getElementById('pelanggaran3').value
+  var pelanggaran4 = document.getElementById('pelanggaran4').value
+  var pelanggaran5 = document.getElementById('pelanggaran5').value
 
   database.ref(today + '/' + kelas + '/' + nama).set({
     pelanggaran1: pelanggaran1,
     pelanggaran2: pelanggaran2,
-    pelanggaran3: pelanggaran3
+    pelanggaran3: pelanggaran3,
+    pelanggaran4: pelanggaran4,
+    pelanggaran5: pelanggaran5
   })
 
   // Hide loading modal after 4 seconds
@@ -1548,11 +1552,15 @@ function displayLeaderboard(filterMonth = "all", filterYear = "all") {
                     const pelanggaran1 = namaPelanggaranData[nama].pelanggaran1;
                     const pelanggaran2 = namaPelanggaranData[nama].pelanggaran2;
                     const pelanggaran3 = namaPelanggaranData[nama].pelanggaran3;
+                    const pelanggaran4 = namaPelanggaranData[nama].pelanggaran4;
+                    const pelanggaran5 = namaPelanggaranData[nama].pelanggaran5;
 
                     const pelanggaranList = [
                       { jenis: pelanggaran1, tanggal },
                       { jenis: pelanggaran2, tanggal },
-                      { jenis: pelanggaran3, tanggal }
+                      { jenis: pelanggaran3, tanggal },
+                      { jenis: pelanggaran4, tanggal },
+                      { jenis: pelanggaran5, tanggal }
                     ].filter(p => p.jenis !== '---');
 
                     if (!namaInfo[nama]) {
@@ -1619,90 +1627,3 @@ document.addEventListener('DOMContentLoaded', () => {
   loadAvailableYears();
   displayLeaderboard();
 });
-
-// ga dipake
-// function displayLeaderboard() {
-//   var dataRef = database.ref();
-//   var dataContainer = document.getElementById('displayLeaderboard');
-
-//   dataRef.once('value')
-//     .then(snapshot => {
-//       const data = snapshot.val();
-//       var namaInfo = {};
-
-//       for (const tanggal in data) {
-//         if (data.hasOwnProperty(tanggal)) {
-//           const kelasData = data[tanggal];
-//           for (const kelas in kelasData) {
-//             if (kelasData.hasOwnProperty(kelas)) {
-//               const namaPelanggaranData = kelasData[kelas];
-//               for (const nama in namaPelanggaranData) {
-//                 if (namaPelanggaranData.hasOwnProperty(nama)) {
-//                   const pelanggaran1 = namaPelanggaranData[nama].pelanggaran1;
-//                   const pelanggaran2 = namaPelanggaranData[nama].pelanggaran2;
-//                   const pelanggaran3 = namaPelanggaranData[nama].pelanggaran3;
-
-//                   const pelanggaranList = [
-//                     { jenis: pelanggaran1, tanggal },
-//                     { jenis: pelanggaran2, tanggal },
-//                     { jenis: pelanggaran3, tanggal }
-//                   ].filter(p => p.jenis !== '---');
-
-//                   if (!namaInfo[nama]) {
-//                     namaInfo[nama] = {
-//                       kelas: kelas,
-//                       pelanggaran: [],
-//                       totalPelanggaran: 0
-//                     };
-//                   }
-
-//                   namaInfo[nama].pelanggaran.push(...pelanggaranList);
-//                   namaInfo[nama].totalPelanggaran += pelanggaranList.length;
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-
-//       let leaderboardArray = Object.entries(namaInfo).map(([nama, info]) => ({
-//         nama,
-//         kelas: info.kelas,
-//         totalPelanggaran: info.totalPelanggaran,
-//         pelanggaran: info.pelanggaran
-//       }));
-
-//       leaderboardArray.sort((a, b) => b.totalPelanggaran - a.totalPelanggaran);
-
-//       let leaderboardHTML = '';
-//       leaderboardArray.forEach((entry, index) => {
-//         leaderboardHTML += `
-//           <div class="card mb-3">
-//             <div class="card-body">
-//               <h5 class="card-title">${index + 1}. ${entry.nama}</h5>
-//               <h6 class="card-subtitle mb-2 text-muted">Kelas: ${entry.kelas}</h6>
-//               <p class="card-text">Total Pelanggaran: ${entry.totalPelanggaran}x</p>
-//               <h6>Detail Pelanggaran:</h6>
-//               <ul>
-//                 ${entry.pelanggaran.map(p => `<li>${p.tanggal}: ${p.jenis}</li>`).join('')}
-//               </ul>
-//             </div>
-//           </div>
-//         `;
-//       });
-
-//       dataContainer.innerHTML = leaderboardHTML;
-//     })
-//     .catch(error => {
-//       console.error("Error fetching data:", error);
-//       dataContainer.innerHTML = "Terjadi kesalahan saat mengambil data.";
-//     });
-// }
-
-// document.addEventListener('DOMContentLoaded', displayLeaderboard);
-
-
-
-
-
-
