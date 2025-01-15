@@ -1366,11 +1366,11 @@ function save() {
 
   var kelas = document.getElementById('kelas').value
   var nama = document.getElementById('nama').value
-  var pelanggaran1 = document.getElementById('pelanggaran1').value
-  var pelanggaran2 = document.getElementById('pelanggaran2').value
-  var pelanggaran3 = document.getElementById('pelanggaran3').value
-  var pelanggaran4 = document.getElementById('pelanggaran4').value
-  var pelanggaran5 = document.getElementById('pelanggaran5').value
+  var pelanggaran1 = document.getElementById('pelanggaran1')?.value || '---';
+  var pelanggaran2 = document.getElementById('pelanggaran2')?.value || '---';
+  var pelanggaran3 = document.getElementById('pelanggaran3')?.value || '---';
+  var pelanggaran4 = document.getElementById('pelanggaran4')?.value || '---';
+  var pelanggaran5 = document.getElementById('pelanggaran5')?.value || '---';
 
   database.ref(today + '/' + kelas + '/' + nama).set({
     pelanggaran1: pelanggaran1,
@@ -1552,15 +1552,11 @@ function displayLeaderboard(filterMonth = "all", filterYear = "all") {
                     const pelanggaran1 = namaPelanggaranData[nama].pelanggaran1;
                     const pelanggaran2 = namaPelanggaranData[nama].pelanggaran2;
                     const pelanggaran3 = namaPelanggaranData[nama].pelanggaran3;
-                    const pelanggaran4 = namaPelanggaranData[nama].pelanggaran4;
-                    const pelanggaran5 = namaPelanggaranData[nama].pelanggaran5;
 
                     const pelanggaranList = [
                       { jenis: pelanggaran1, tanggal },
                       { jenis: pelanggaran2, tanggal },
-                      { jenis: pelanggaran3, tanggal },
-                      { jenis: pelanggaran4, tanggal },
-                      { jenis: pelanggaran5, tanggal }
+                      { jenis: pelanggaran3, tanggal }
                     ].filter(p => p.jenis !== '---');
 
                     if (!namaInfo[nama]) {
