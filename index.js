@@ -8,7 +8,7 @@ function showkelas() {
   var urlParams = new URLSearchParams(window.location.search);
   var kelas = urlParams.get('kelas');
 
-  if (kelas == "X AK 3") {
+  if (kelas == "X AK 1") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
