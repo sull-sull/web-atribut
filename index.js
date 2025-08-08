@@ -357,7 +357,7 @@ for (var i = 0; i < newOptions2.length; i++) {
     }
   }
 
-  if (kelas == "X MP 2") {
+  if (kelas == "X PPLG") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -1628,3 +1628,4 @@ document.addEventListener('DOMContentLoaded', () => {
   loadAvailableYears();
   displayLeaderboard();
 });
+
