@@ -1628,4 +1628,3 @@ document.addEventListener('DOMContentLoaded', () => {
   loadAvailableYears();
   displayLeaderboard();
 });
-
