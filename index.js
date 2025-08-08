@@ -180,7 +180,239 @@ for (var i = 0; i < newOptions2.length; i++) {
         selectElement2.appendChild(option2);
     }
   }
+
+  if (kelas == "X DKV") {
+    var selectElement1 = document.getElementById("kelas");
+    selectElement1.innerHTML = "";
+    var newOptions1 = kelas;
+    var option1 = document.createElement("option");
+    option1.value = newOptions1;
+    option1.text = newOptions1;
+    selectElement1.appendChild(option1);
+
+    var selectElement2 = document.getElementById("nama");
+    selectElement2.innerHTML = "";
+    var newOptions2 = [
+      'AHMAD FADIL',
+      'AISYAHBILA JALIL',
+      'ALFIERA MUTIARA SAFITRI',
+      'ALISA',
+      'ARRAFI PANTARA',
+      'AULIA ZULFA',
+      'DINDA FIKA AZAHRA',
+      'FIRDA AWALIYAH',
+      'GHANI NAUFAL HAFIZ',
+      'HERNITA SAL BILQIS',
+      'HUMAIRA',
+      'IVONY GHEIZA MAHARANI',
+      'KHANZA AZZAHRAA',
+      'KHANZA ARIFATUL’ ARRIFATUL MUAMMANAH',
+      'LINTANG GHINA AYUNINGTYAS',
+      'MAULIDA HASANAH',
+      'MIKAAEL AHMAD JAZZAERA',
+      'MUHAMMAD BAGAS NADIFKHAIRULLAH',
+      'MUHAMMAD FACHRUL RIDHO',
+      'NADIN NUR FALISHA',
+      'NAFILLA AULIA ATHAHADI',
+      'NAIFA JANEETA',
+      'NOVA AULIA',
+      'QUEENSHE PUTTY ARIMBI SETTYO',
+      'RAISSA NANDA ZASKIA',
+      'RAISYA REIZQUITA',
+      'RIFA SELA OKTAVIANI',
+      'SALMA MUFIDAH ZULFA',
+      'SALWA MAULIDA',
+      'SANTIKA ALIFA ZEE RAYA',
+      'SITI NAZWA NURKAILA',
+      'SYAFIRA HUMAIRA YUSUF',
+      'THALITA SYAHLA HUMAIRA',
+      'ULIL ALBAB RAHMATULLAH',
+      'ZALFA KAMELIA NURFAIH',
+      'ZASKIA SEPTI RAMAHDANI'
+
+    ];
+
+      for (var i = 0; i < newOptions2.length; i++) {
+        var option2 = document.createElement("option");
+        option2.value = newOptions2[i];
+        option2.text = newOptions2[i];
+        selectElement2.appendChild(option2);
+    }
+  }
+
+  if (kelas == "X MP 1") {
+    var selectElement1 = document.getElementById("kelas");
+    selectElement1.innerHTML = "";
+    var newOptions1 = kelas;
+    var option1 = document.createElement("option");
+    option1.value = newOptions1;
+    option1.text = newOptions1;
+    selectElement1.appendChild(option1);
+
+    var selectElement2 = document.getElementById("nama");
+    selectElement2.innerHTML = "";
+    var newOptions2 = [
+      'ABRYLIA STEFANY GUNAWAN',
+      'ADRIAN BINTANG',
+      'ADZIRA',
+      'ARTYA ISYAHIRA',
+      'AUREL BUNGA ANJANI',
+      'BILQIS MUTIA RAMADHANI',
+      'CHIKA RAIHANA KAMILA',
+      'CINTA ADELIANA DJUNRA',
+      'FAZA ALTHOFUNNISA',
+      'FITRI HAWA NUR AZIZA',
+      'HAYQAL PRATAMA',
+      'INDAH NOVITA SARI',
+      'JIHAN FADIYAH AGUSTINA',
+      'KALILA RAHMI WIDIANTI',
+      'KEISHA ZAHROTUSSITA',
+      'KESYA PUTRI DEFRIZAL',
+      'MAULIDA NURUL HASANAH',
+      'MAWAR RISA',
+      'MEYRISKA AULIA PUTRI',
+      'MOZA RIZKIA RAMADHANI',
+      'MUHAMAD BINTANG ARDIAN RIZKI',
+      'NADZIRA FARHAH ADIBAH',
+      'NAJMA LADY ADEEBA',
+      'NASYWA AZZAHRA SULAIMAN',
+      'NYIMAS KAYIRAH SYARANI',
+      'RADO WILLY',
+      'REVI MAULIDYA',
+      'RIZKY ALIYAH',
+      'SAYIDAH NAZMAH BA’BUD',
+      'SHEILA AURELIA',
+      'SYARIFAH RAMADHANI',
+      'TIARA SALSABILA SULISTIO',
+      'VALENCIA VERTO ODILIA GUNANDI',
+      'VANESYA CAHYA WARDANI',
+      'WAHYUNI',
+      'ZAHRA ANGGRAINI WIDYANINGSIH'
+
+    ];
       
+for (var i = 0; i < newOptions2.length; i++) {
+        var option2 = document.createElement("option");
+        option2.value = newOptions2[i];
+        option2.text = newOptions2[i];
+        selectElement2.appendChild(option2);
+    }
+  }
+
+  if (kelas == "X MP 2") {
+    var selectElement1 = document.getElementById("kelas");
+    selectElement1.innerHTML = "";
+    var newOptions1 = kelas;
+    var option1 = document.createElement("option");
+    option1.value = newOptions1;
+    option1.text = newOptions1;
+    selectElement1.appendChild(option1);
+
+    var selectElement2 = document.getElementById("nama");
+    selectElement2.innerHTML = "";
+    var newOptions2 = [
+      'ANANDA LUTFIA INDIRIANI',
+      'ANAYA PUTRI KHAIRIN',
+      'ANGGUN YULIA AZZAHRA',
+      'ANISA RAYHAN',
+      'ARTIKA RAHMADINI',
+      'AWALLIYAH AISYAH FATHIN',
+      'AZKA PUTRI MAULIDIA',
+      'AZKIYA SYAUQI PARADIBA',
+      'BILGIS SYAHIRA',
+      'DANIEL PUTRA PRATAMA',
+      'DESIRA ARTITA WANODYATAMA',
+      'DHEDHE GHENDIS KUSUMANINGRUM',
+      'FAHIMA KADHIMI',
+      'HANNA ZAHRA SYARARA BATU BARA',
+      'JASMINE REVALINA',
+      'KEISHA AURELIA RAIHANAH',
+      'KHANZA SABIYA BILQIS',
+      'KHYLA ASMAUL KHUSNA',
+      'MARSHA MAULIDA',
+      'MUHAMAD ARZATIL KAHFI',
+      'NATALIYA ZAHRA AYUNDA PUTRI',
+      'NAYLA KHUMAIRA PUTRI',
+      'NISRINA AKARUI AMIN',
+      'NOVIA TRI AHSANI',
+      'NUR AJENG MULIA MAHARANI',
+      'RAYHAN RASYA SAPUTRA',
+      'RERE CARLYSTA',
+      'RETNO SULISTIA NINGSIH',
+      'RODERICA CHRISTABEL',
+      'SAFIRA AMELIA PUTRI',
+      'SITI CINTA FLO',
+      'SITI SALWA',
+      'SYIFA KHOIRUNNISA',
+      'TIARA NUR RAMADHANI',
+      'VELIKA AURELIA',
+      'VERA APRILIANI'
+    ];
+
+    for (var i = 0; i < newOptions2.length; i++) {
+        var option2 = document.createElement("option");
+        option2.value = newOptions2[i];
+        option2.text = newOptions2[i];
+        selectElement2.appendChild(option2);
+    }
+  }
+
+  if (kelas == "X PPLG") {
+    var selectElement1 = document.getElementById("kelas");
+    selectElement1.innerHTML = "";
+    var newOptions1 = kelas;
+    var option1 = document.createElement("option");
+    option1.value = newOptions1;
+    option1.text = newOptions1;
+    selectElement1.appendChild(option1);
+
+    var selectElement2 = document.getElementById("nama");
+    selectElement2.innerHTML = "";
+    var newOptions2 = [
+      'ABIYASHA NADYA OLIVIA',
+      'ADILA NURIL HANDOYO',
+      'AFNI LABIBAH AFIFAH',
+      'AHMAD AFRIANO',
+      'AISYAH NUR ABDILAH RAMADHANI',
+      'AKBAR AFANDI',
+      'AELXSANDER CAESAR HETHARIA',
+      'ALIYAH RAMADHANI',
+      'ALIYA RADITA UTAMA',
+      'BAYU EKA PUTRA',
+      'CHOIRULLOH ACHMAD DONI',
+      'CINTA MAURA PUTRI',
+      'DENIS INDINAR',
+      'DEWO NDARU TUNJUNG BIRU',
+      'DIAZ RIZQI ARNANDI',
+      'EKA BIMA ALFIANSYAH',
+      'ERNES NADIRA PUTRI',
+      'FERDIO REYVANZA',
+      'FREDDY HASIHOLAN HUTANGALUNG',
+      'KESILA DESTA APRILLIA',
+      'KEVIN NEO RACHADIAN',
+      'KIRANA PUTRI SASKIA',
+      'MIKHAIL FARIZI',
+      'MUHAMAD RIZKI PUTRA',
+      'MUHAMMAD FARREL AL ZAHIR',
+      'NAUFAL HILMYANDARA',
+      'NHMIRRA AZKA DIFANI',
+      'RAHANDIKA ALWIYANSHA',
+      'RAIHAN WAHYU PRATAMA',
+      'RAKHA ATHALLAH',
+      'RHAFI AULIA RAHMAN',
+      'RIKZA FADHLI ABARUZ',
+      'SITI MARWAH',
+      'TINO SY\'BAN LUMINTANG',
+      'ZOE EZRA RAUUF WAHYUDI'
+    ];
+
+  for (var i = 0; i < newOptions2.length; i++) {
+        var option2 = document.createElement("option");
+        option2.value = newOptions2[i];
+        option2.text = newOptions2[i];
+        selectElement2.appendChild(option2);
+    }
+  }
 
   if (kelas == "XI AK 1") {
     var selectElement1 = document.getElementById("kelas");
@@ -605,7 +837,6 @@ for (var i = 0; i < newOptions2.length; i++) {
       'ANSORI FAHMI',
       'FAKHRI CAESARAINANTO',
       'FAREL AL AFIEF',
-      'FARRAS ZAFIR IMRAN',
       'FATIA AL ZAHRA',
       'FEIRUZ NADFHIF ADITYA NURRACHMAN',
       'FILTHAN DEMIANT',
@@ -626,7 +857,7 @@ for (var i = 0; i < newOptions2.length; i++) {
       'MUHAMMAD REVAND FAHLEVI',
       'NUR HUSNA SYA\'BANDIAH',
       'NUR USHWATUN HASANAH',
-      'RACHEL PUTRI EFFENDI',
+      'RACHEL PUTRI',
       'RIFA AZHAR RAHMADHAN',
       'RIFDAH RIDHHADATUL AISY',
       'SHELLY NOVELLA',
@@ -1092,406 +1323,6 @@ for (var i = 0; i < newOptions2.length; i++) {
       'TADZKYA SANINA',
       'YAAHANIIZH MUTIARA',
       'ZALFA APRILIA JUVENTINI'
-  ];
-  
-    for (var i = 0; i < newOptions2.length; i++) {
-        var option2 = document.createElement("option");
-        option2.value = newOptions2[i];
-        option2.text = newOptions2[i];
-        selectElement2.appendChild(option2);
-    }
-  }
-  
-
-  if (kelas == "XII AK 1") {
-    var selectElement1 = document.getElementById("kelas");
-    selectElement1.innerHTML = "";
-    var newOptions1 = kelas;
-    var option1 = document.createElement("option");
-    option1.value = newOptions1;
-    option1.text = newOptions1;
-    selectElement1.appendChild(option1);
-
-    var selectElement2 = document.getElementById("nama");
-    selectElement2.innerHTML = "";
-    var newOptions2 = [
-      'ADINDA ANUGRAH RIZKY',
-      'ANGGITA RISMA DEWI',
-      'APRILA ANGGARI',
-      'ASKA ASKIA',
-      'ASYIFA NURSA\'ADAH',
-      'AULIA AZAHRA',
-      'AYUNA KHAIRUNNISA',
-      'CHELSE JESY OLIVIA',
-      'CITRA RAHMA AULIA',
-      'DEVI FATMA SARI',
-      'DINA AULIA SISWANTO',
-      'EMELY RESTIANA',
-      'ERLANGGA AFRIANSYAH PUTRA',
-      'FADIRA GUSTIYANA',
-      'FAUZIAH NUR KAMILAH',
-      'FIRDA SAKINAH',
-      'GUSTI AYU CHARMEN SAVITRI',
-      'KHANA KHAIDAH NINGSIH',
-      'LINDA PUTRI PURNOMO',
-      'MAR\'ATUL AULIA NUR ISNAENI',
-      'MESSI SYAHRANI',
-      'MOZA ADITIYA',
-      'NABILA DWI HIDAYAT',
-      'NADINE KARTIKA DARWIN',
-      'NIKE OKTAVIA RAHMASARI',
-      'NURMALINDA',
-      'PUTRI MEYKA ANDINI',
-      'RAHMADANIA',
-      'REVINA ADLIA FACHRANI',
-      'SAJIDAH RAMADHANI',
-      'SEVILA AULIA',
-      'SILVIA SYAHRONI',
-      'SITI ROBIATUL ADAWIYAH',
-      'SYAHLA NAVISA',
-      'TIFANIA RAMADHANI',
-      'VIKA KHAIRIYAH'
-  ];
-  
-    for (var i = 0; i < newOptions2.length; i++) {
-        var option2 = document.createElement("option");
-        option2.value = newOptions2[i];
-        option2.text = newOptions2[i];
-        selectElement2.appendChild(option2);
-    }
-  }
-
-  if (kelas == "XII AK 2") {
-    var selectElement1 = document.getElementById("kelas");
-    selectElement1.innerHTML = "";
-    var newOptions1 = kelas;
-    var option1 = document.createElement("option");
-    option1.value = newOptions1;
-    option1.text = newOptions1;
-    selectElement1.appendChild(option1);
-
-    var selectElement2 = document.getElementById("nama");
-    selectElement2.innerHTML = "";
-    var newOptions2 = [
-      'ALISYA NUUR KHOFIYA',
-      'ANIS ISMA NURJANAH',
-      'ASTRID OCTA RAMADHANI',
-      'AULIA APRILIANI',
-      'AURA NADIA HADI PUTRI',
-      'BUNGA SEROJA PUTRI GUFRON',
-      'CHRISTIN BUNGA NATALIA',
-      'CITRA AULIA',
-      'DESI LESTARI',
-      'DIAN AHIRIYANI',
-      'ELSA MAULIDIYA',
-      'FATIHA NUR ZAHWA',
-      'FIRDA DIAH AGUSTINA',
-      'GENDYS ROBBIATUL SYIFA',
-      'HANINA NAYARA SYAFA',
-      'KHOIROTUN NISSA',
-      'LINTANG JULIANA ZAHRA',
-      'MAWADDAH SYAKINAH SETIADI',
-      'MIA AMELIA',
-      'MUHAMMAD RIZQI MAULANA',
-      'NADIA',
-      'NEIZQILLASHAQQA AURENZZA',
-      'NUR SAKINAH QOLBI MAULIDI',
-      'PUTRI MAHARANI',
-      'PUTRI RAMADHAN',
-      'RAHMAT FADILAH',
-      'SAFIRA NUR\'AINI',
-      'SELFIA AMELLIA',
-      'SHAFIQAH MISTAM',
-      'SIDNEY MILLENIA',
-      'SINDI',
-      'SUKMANING AYU WANDIRAH',
-      'SYALSABILA DWI RAMADHANI',
-      'VERINA ZAHRA',
-      'YUSROFUL FUMAIDA AMELIA'
-  ];
-  
-    for (var i = 0; i < newOptions2.length; i++) {
-        var option2 = document.createElement("option");
-        option2.value = newOptions2[i];
-        option2.text = newOptions2[i];
-        selectElement2.appendChild(option2);
-    }
-  }
-
-  if (kelas == "XII BR") {
-    var selectElement1 = document.getElementById("kelas");
-    selectElement1.innerHTML = "";
-    var newOptions1 = kelas;
-    var option1 = document.createElement("option");
-    option1.value = newOptions1;
-    option1.text = newOptions1;
-    selectElement1.appendChild(option1);
-
-    var selectElement2 = document.getElementById("nama");
-    selectElement2.innerHTML = "";
-    var newOptions2 = [
-      'ALIN ARINI',
-      'ALISA',
-      'ALLYSA AGUSTIN',
-      'ALMA RISMARTANTI',
-      'ALYA FAIHAA RAMADHANI',
-      'ANNISA DWI YUNIATI',
-      'ARINI NUR HANIFAH',
-      'BUNGA ZELIA AKMALIA PUTRI',
-      'DINA ASITA',
-      'DZAKY ARSAN HIDAYAT',
-      'FATIKHAH RAHMADHANI',
-      'GENDHIS AJENG RAHMANIA S',
-      'HILDA YULIANTI',
-      'INARA RAZANA WAFA',
-      'JHESICHA FEBIOLA',
-      'KAYLA ADINDA PANGESTU',
-      'KAYLA SYAHARANIE',
-      'KEYSA SYOFYANI',
-      'KYRA SANMILDEN',
-      'NABILLA KHANZA',
-      'NAILA MUAZZALA',
-      'NAJWA HASYA DAMAR',
-      'NANDA SABELA',
-      'NAYLA ORCHIDELIA',
-      'NAZWA SALWANISA',
-      'NUR FADIAH RAMADHANI',
-      'NURLAILA RAMADHANI',
-      'PUTRI ZAHRA ALYA',
-      'SAEPUL UMAR',
-      'SARAH KIRANI FATURAHMAN',
-      'SHALWA AMELIA',
-      'SYIFAA SALSABIILA',
-      'TISYAH UMAIRAH',
-      'WITRI RAHMADANI',
-      'WULANDARI',
-      'ZAKIAH MAUDIANA'
-  ];
-  
-    for (var i = 0; i < newOptions2.length; i++) {
-        var option2 = document.createElement("option");
-        option2.value = newOptions2[i];
-        option2.text = newOptions2[i];
-        selectElement2.appendChild(option2);
-    }
-  }
-
-  if (kelas == "XII DKV") {
-    var selectElement1 = document.getElementById("kelas");
-    selectElement1.innerHTML = "";
-    var newOptions1 = kelas;
-    var option1 = document.createElement("option");
-    option1.value = newOptions1;
-    option1.text = newOptions1;
-    selectElement1.appendChild(option1);
-
-    var selectElement2 = document.getElementById("nama");
-    selectElement2.innerHTML = "";
-    var newOptions2 = [
-      'ADINDA DENISSA CANDRAKANTI',
-      'CELSA AGUSTINA',
-      'DHIYAA ALYA RAMADHANI',
-      'DIDAH IRMA YANTI',
-      'DWI WAHYU SULISTYO',
-      'FARHAM DINA',
-      'FINA SEPTIANA',
-      'FUZIAH',
-      'INDIRA RUSDA',
-      'ISNNI ALANA MULYAWAN',
-      'IVANA NATALIE QUINN',
-      'JELITA NURUL ALINI',
-      'MUHAMAD IKSAN FADILAH',
-      'MUHAMMAD JAFAR SHIDIQ',
-      'NABIL FAJRI HAKIM',
-      'NADINE SULISTYA PASHA',
-      'NASHWA ARNIA SAFWA',
-      'NASWA ZAHRANI HUDA',
-      'NAYLA HUSNA ALIATHA HADI',
-      'NEISA NADEA PUTRI',
-      'NOENNAFATRA AZAHRA NEYFARATU',
-      'NOVA ISMAINI',
-      'NUR HIDAYAH',
-      'NURUL AZ ZAHRA',
-      'PATRESIA HELENA DANI',
-      'PERMATA SYANI',
-      'RAZAN MUHAMMAD SAKHA',
-      'SALWA AMELIA PUTRI',
-      'SHELINA ROYDINATA SAFIRA',
-      'SHIRENNA MICHELE PUTRI HENDRAWAN',
-      'TIARA RACHMADINA',
-      'UMAR AL - FARUQ',
-      'ZAHWA ZAUZA RIFAI'
-  ];
-  
-    for (var i = 0; i < newOptions2.length; i++) {
-        var option2 = document.createElement("option");
-        option2.value = newOptions2[i];
-        option2.text = newOptions2[i];
-        selectElement2.appendChild(option2);
-    }
-  }
-
-  if (kelas == "XII MP 1") {
-    var selectElement1 = document.getElementById("kelas");
-    selectElement1.innerHTML = "";
-    var newOptions1 = kelas;
-    var option1 = document.createElement("option");
-    option1.value = newOptions1;
-    option1.text = newOptions1;
-    selectElement1.appendChild(option1);
-
-    var selectElement2 = document.getElementById("nama");
-    selectElement2.innerHTML = "";
-    var newOptions2 = [
-      'ADELIA SYAFIRA',
-      'AISYAH ROHMAN',
-      'ARSYA BILLA',
-      'AULIA CAHAYA',
-      'AURELITA CINTA RACHMAN',
-      'BINTA MA\'RIFA',
-      'CAMILLA JULIA AZZAHRA',
-      'CHIKA NUR ARDILA',
-      'DEFI FATMAWATI',
-      'DELIANA SASKIA RAHMADANI',
-      'DINDA FATIA AZ ZAHRA',
-      'FADIA RAHMA AULIA',
-      'FITRI LESTARI',
-      'HANIFAH OLIVIA QEISA',
-      'INDRESSWARI PRAPTI RAHAYU',
-      'INNE RAMADHANI',
-      'IRMA FEBRIANI',
-      'JIHAN DELIA LESTARI',
-      'KESYA ZAHWA AZ-ZAHRA',
-      'MELA PUSPITA LUPI',
-      'NETI FERITA LOIDE ULANA',
-      'NILDZA SERAFINA',
-      'NUR FAJRIYAH',
-      'NURIN NABILA',
-      'RAIHAN RAMADHAN',
-      'RATRI FADILLAH',
-      'SALSABILA AINI RAMADHANI',
-      'SALWA DINAR HAURA',
-      'SARAH SEVILIA',
-      'SEKAR AULIA FEBRIYANTI',
-      'SHAZKIA AULIA PUTRI',
-      'SUHAILAH',
-      'TRY WIDYA RESTYA NINGRUM',
-      'VANIA PUTRI CAHYANI',
-      'WULANDARI AVRILIANI',
-      'ZAHRA DINA AMERA'
-  ];
-  
-    for (var i = 0; i < newOptions2.length; i++) {
-        var option2 = document.createElement("option");
-        option2.value = newOptions2[i];
-        option2.text = newOptions2[i];
-        selectElement2.appendChild(option2);
-    }
-  }
-
-  if (kelas == "XII MP 2") {
-    var selectElement1 = document.getElementById("kelas");
-    selectElement1.innerHTML = "";
-    var newOptions1 = kelas;
-    var option1 = document.createElement("option");
-    option1.value = newOptions1;
-    option1.text = newOptions1;
-    selectElement1.appendChild(option1);
-
-    var selectElement2 = document.getElementById("nama");
-    selectElement2.innerHTML = "";
-    var newOptions2 = [
-      'AISYAH RANI',
-      'AMIRAH AVRILLA',
-      'ANAYA PUTRI',
-      'ASYILA NAILA ALIFAH',
-      'AUREL ANGGRAINI',
-      'AVRILIA EUNIKE MUKE',
-      'CALLYSTA NATHANIA PUTRI',
-      'CHELSEA SHAVONNE MAGDALENA',
-      'CITRA PUTI JAMI',
-      'DEVI SOLEHAH AGUSTIANI',
-      'DWI SURYANI ASTUTI',
-      'FITRIA AL ZAHRA',
-      'GINNA PITALOKA',
-      'IMA ANGGUN SALAMAH',
-      'INTAN RAMADHANI',
-      'JEANNY OLIVIA',
-      'KEISYAH FIRDINIYA',
-      'LULU INDRIYANI',
-      'MAYANG KHAERANI',
-      'NADILA',
-      'NURFITRI ANDRIYANI',
-      'PENI LADIANTI',
-      'RAINA INAYA PUTRI',
-      'RISTA WULANDARI ZEGA',
-      'SALSABILAH ZAELANI',
-      'SALWA JAHRANI PUTRI',
-      'SASKIA AMANDA',
-      'SELVIA ANNASTASYA',
-      'SINTA NOVITA SARI',
-      'TRI ADHANI',
-      'USWATUN HASANAH',
-      'VANIA LUNA',
-      'YOLA ANASYA PUTERI',
-      'ZUHROTUL AINI SEPTIANI',
-  ];
-  
-    for (var i = 0; i < newOptions2.length; i++) {
-        var option2 = document.createElement("option");
-        option2.value = newOptions2[i];
-        option2.text = newOptions2[i];
-        selectElement2.appendChild(option2);
-    }
-  }
-
-  if (kelas == "XII RPL") {
-    var selectElement1 = document.getElementById("kelas");
-    selectElement1.innerHTML = "";
-    var newOptions1 = kelas;
-    var option1 = document.createElement("option");
-    option1.value = newOptions1;
-    option1.text = newOptions1;
-    selectElement1.appendChild(option1);
-
-    var selectElement2 = document.getElementById("nama");
-    selectElement2.innerHTML = "";
-    var newOptions2 = [
-      'ACHMAD HAIDAR RAHMAN',
-      'AL SAKHA FATTHARIQ ANUAR',
-      'ALDI KURNIAWAN',
-      'ALFI SYAHRI',
-      'ALIFIA NAILALHIMMAH',
-      'ALIFIAN ABDIEL RAFIF',
-      'ARIE FATUR RAHMAN',
-      'ASLAM REHAN SAPTOTRIONO',
-      'CAESARIAN LANANG PARIZANO ZAIM',
-      'CLAUDYA PATRICIA BORORING',
-      'DAVID PUTRA PRATAMA',
-      'EVAN DESTIAN SAPUTRA',
-      'FITRI OKTAVIANI',
-      'MAYLA HUMAIROH',
-      'MIA AMALA',
-      'MUHAMAD LINTANG ANDIYAN',
-      'MUHAMMAD ADITYA NOVIANSYAH',
-      'MUHAMMAD AKMAL SABAN',
-      'MUHAMMAD IRFAN MAULANA',
-      'MUHAMMAD SALMAN AL FARISI',
-      'MUHAMMAD YAZID MUNDZIR',
-      'NAZLA RAHMA',
-      'NAZRIL SATRIA HIDAYATULLAH',
-      'NAZWA RAMADANI SEPTIAN',
-      'NIKI AHMAD HAMDANI',
-      'RAMADINA AL MUZTHAZAM',
-      'RANTI AZZAHRA',
-      'RASKIA RAHMADINI',
-      'REVANI KHOIRUNNISA AZZAHRA',
-      'REYNALDO YUSELLINO',
-      'SHELINA ROYDINATA SAFIRA',
-      'SITI AZIZAH AGUSTINA',
-      'SYIFA NAZILAH PUTRI',
-      'USWATUN KHASANAH',
-      'YAYA YABES ABFILE'
   ];
   
     for (var i = 0; i < newOptions2.length; i++) {
