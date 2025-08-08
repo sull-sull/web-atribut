@@ -8,7 +8,181 @@ function showkelas() {
   var urlParams = new URLSearchParams(window.location.search);
   var kelas = urlParams.get('kelas');
 
+
   if (kelas == "X AK 1") {
+    var selectElement1 = document.getElementById("kelas");
+    selectElement1.innerHTML = "";
+    var newOptions1 = kelas;
+    var option1 = document.createElement("option");
+    option1.value = newOptions1;
+    option1.text = newOptions1;
+    selectElement1.appendChild(option1);
+
+    var selectElement2 = document.getElementById("nama");
+    selectElement2.innerHTML = "";
+    var newOptions2 = [
+      'AIRIN OKTAVIANI',
+      'ANISA IKA PUTRI',
+      'AQILA KURNIA ANDARI',
+      'ARIANA ZAHRANI',
+      'AURA MEZZALUNA SYALUNA',
+      'BUNGA RAHMAH',
+      'FATIMAH BATUL',
+      'FIONA ALIFYA MAULIDINA',
+      'HANIFA ZASKKIA SUHERMAN',
+      'JIHAN BILQIS UFAIRA',
+      'JIHHAN JULIYANI',
+      'KAFI AR JAISY',
+      'KEYZA FERDIANSYAH',
+      'MUHAMMAD ZAINAL ARIFIN',
+      'MUZARI ARORA',
+      'NABILA JIHAN RAMADHANI',
+      'NADA SALSABILA',
+      'NAILA BILQISTI',
+      'NUR AGNIA ARISKA',
+      'OCEAN CAMELIA BUSTANIL ILMIAH',
+      'PUTRI AYU NASIKI',
+      'RAISYAH FITRIA RAHMANI',
+      'RIFKAH AWALIYAH',
+      'RINDU ANANDA ABWAR',
+      'SHATZHI ANASTASIA PUTRI',
+      'SITI FADIA ZACHRA',
+      'SITI MUSLIHAH',
+      'SUCI ANASTASYA MUTIARA',
+      'SYAFHIRA KEYZAHRA',
+      'SYUFFI ARBAIRA',
+      'UTAMI TRI JUNIARTI',
+      'VICA FAUJIYA',
+      'WULAN AGUSTYANI',
+      'YOLIN MAULANA LESTARI',
+      'ZAHRATUNISSA'
+
+    ];
+
+    for (var i = 0; i < newOptions2.length; i++) {
+        var option2 = document.createElement("option");
+        option2.value = newOptions2[i];
+        option2.text = newOptions2[i];
+        selectElement2.appendChild(option2);
+    }
+  }
+
+  if (kelas == "X AK 2") {
+    var selectElement1 = document.getElementById("kelas");
+    selectElement1.innerHTML = "";
+    var newOptions1 = kelas;
+    var option1 = document.createElement("option");
+    option1.value = newOptions1;
+    option1.text = newOptions1;
+    selectElement1.appendChild(option1);
+
+    var selectElement2 = document.getElementById("nama");
+    selectElement2.innerHTML = "";
+    var newOptions2 = [
+      'ADINDA RASA NATASYA',
+      'ADZKIA HANIFAH',
+      'AISY KHALDA NAHILA',
+      'ANASYA PUTRI MEISYILLA',
+      'AURELIA CHANTIKA RAHAYU',
+      'AZ ZAHRA NUR SILVIANA',
+      'CALILISTA PUTRI MASSARDI',
+      'DENIS MUHAMMAD RAFI',
+      'DITA NURMALA',
+      'EZIQHA',
+      'FIRZA KHALILA RAMADHANI',
+      'HANAN DZAKIRAH',
+      'INTAN DWI MULYASARI',
+      'KAMILA NUR AINI',
+      'KESYA SALWA AURANISA',
+      'LENA JELITA SARI',
+      'MARISYAH',
+      'MAULIDA AFIFA KHAIRUNISA',
+      'MOZA AULIA PUTRI',
+      'MUHAMMAD RAFFA',
+      'NAJWA OKTAPIANI',
+      'NAWAL SYAHRANI',
+      'NAYSILA RAHAYU',
+      'PUTRI FARAH DESINTA',
+      'RAHEL ANGEL LEONITA',
+      'RAISSYA AGUSTINA JUNIAR',
+      'RISMA PERTIWI',
+      'SAFA MAULIDAH',
+      'SAFHA AFRILA PUTRI',
+      'SALWA EDJA AZZAHRA',
+      'SANTIKA NIA RAMADHANI',
+      'SELLY NURMALASARI',
+      'SITI NABILA KHANZA',
+      'ZASKIA FAADHILLAH PRIYADI'
+    ];
+
+    for (var i = 0; i < newOptions2.length; i++) {
+        var option2 = document.createElement("option");
+        option2.value = newOptions2[i];
+        option2.text = newOptions2[i];
+        selectElement2.appendChild(option2);
+    }
+  }
+
+  if (kelas == "X BR") {
+    var selectElement1 = document.getElementById("kelas");
+    selectElement1.innerHTML = "";
+    var newOptions1 = kelas;
+    var option1 = document.createElement("option");
+    option1.value = newOptions1;
+    option1.text = newOptions1;
+    selectElement1.appendChild(option1);
+
+    var selectElement2 = document.getElementById("nama");
+    selectElement2.innerHTML = "";
+    var newOptions2 = [
+      'ADINDA PUTRI YULIANTI',
+      'AFIFAH AFIANI',
+      'AINI MAULIDA',
+      'ALIYA PUTRI SAVITA',
+      'AUFA MURSYID RAMDHANI',
+      'AUREL SYAFRIANI',
+      'CHARISA PUTRI',
+      'CINTA PUTRI LEXSONO',
+      'DEFINDRA PUJIARTHA',
+      'DHANI RAMADHAN',
+      'DHARIFAH NUR NAAFI FARWIDI',
+      'ERIAN SALSABILLAH',
+      'FAJAR SAFUTRA',
+      'FATHIYA',
+      'GIAN OPHELIA BAHTIAR',
+      'HAIKAL AMY AZHARI',
+      'HERWINDY AYU OKTAVIANI',
+      'JESSICA ANASTACIA',
+      'JUANGGA MAHARANI PUTRI',
+      'KAILA OKTAVIANI',
+      'KAYLA APRIANI',
+      'LUBNA SYAROF',
+      'LULU LUPIAH',
+      'MUHAMMAD AFDAL DWI A.',
+      'MUHAMMAD ALIF SATIBI',
+      'MUTIA RANTI',
+      'NABILUL ARKAN',
+      'PUTRI SEPTIYANTI',
+      'RIFAL MAULANA RAMDAN',
+      'SAKIROTUN NISAI',
+      'SAVIRA ESA WIDI',
+      'SAVIRA SAFITRI',
+      'SYARA PUTRI RAMADHANI',
+      'SYAVANDI IBNU MAYID',
+      'TESAVIA KEYSA SABILA',
+      'TRI HANDAYANI AGUSTIN'
+    ];
+
+for (var i = 0; i < newOptions2.length; i++) {
+        var option2 = document.createElement("option");
+        option2.value = newOptions2[i];
+        option2.text = newOptions2[i];
+        selectElement2.appendChild(option2);
+    }
+  }
+      
+
+  if (kelas == "XI AK 1") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -66,7 +240,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "X AK 2") {
+  if (kelas == "XI AK 2") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -122,7 +296,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "X BR 1") {
+  if (kelas == "XI BR 1") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -180,7 +354,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "X BR 2") {
+  if (kelas == "XI BR 2") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -238,7 +412,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "X DKV") {
+  if (kelas == "XI DKV") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -295,7 +469,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "X MP") {
+  if (kelas == "XI MP") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -320,7 +494,6 @@ function showkelas() {
       'EKA SRI WIJAYANTI',
       'INTAN KHARISMA PUTRI',
       'JIHAN SAFITRI',
-      'KANIA SUKMA APRILIA',
       'KHANSA SAUSAAN MUFIDAH',
       'KHOIRUNNISA',
       'MARSELLA DWI PUSPITA',
@@ -353,7 +526,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "X PPLG 1") {
+  if (kelas == "XI PPLG 1") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -411,7 +584,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "X PPLG 2") {
+  if (kelas == "XI PPLG 2") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -469,7 +642,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI AK 1") {
+  if (kelas == "XII AK 1") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -527,7 +700,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI AK 2") {
+  if (kelas == "XII AK 2") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -585,7 +758,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI BR 1") {
+  if (kelas == "XII BR 1") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -643,7 +816,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI BR 2") {
+  if (kelas == "XII BR 2") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -701,7 +874,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI DKV") {
+  if (kelas == "XII DKV") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -757,7 +930,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI MP 1") {
+  if (kelas == "XII MP 1") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -815,7 +988,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI MP 2") {
+  if (kelas == "XII MP 2") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -872,7 +1045,7 @@ function showkelas() {
     }
   }
 
-  if (kelas == "XI RPL") {
+  if (kelas == "XII RPL") {
     var selectElement1 = document.getElementById("kelas");
     selectElement1.innerHTML = "";
     var newOptions1 = kelas;
@@ -928,6 +1101,7 @@ function showkelas() {
         selectElement2.appendChild(option2);
     }
   }
+  
 
   if (kelas == "XII AK 1") {
     var selectElement1 = document.getElementById("kelas");
