@@ -402,7 +402,8 @@ for (var i = 0; i < newOptions2.length; i++) {
       'RHAFI AULIA RAHMAN',
       'RIKZA FADHLI ABARUZ',
       'SITI MARWAH',
-      'TINO SY'
+      'TINO SY\'BAN LUMINTANG',
+      'ZOE EZRA RAUUF WAHYUDI'
     ];
 
   for (var i = 0; i < newOptions2.length; i++) {
@@ -856,7 +857,7 @@ for (var i = 0; i < newOptions2.length; i++) {
       'MUHAMMAD REVAND FAHLEVI',
       'NUR HUSNA SYA\'BANDIAH',
       'NUR USHWATUN HASANAH',
-      'RACHEL PUTRI EFFENDI',
+      'RACHEL PUTRI',
       'RIFA AZHAR RAHMADHAN',
       'RIFDAH RIDHHADATUL AISY',
       'SHELLY NOVELLA',
