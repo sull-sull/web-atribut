@@ -1,3 +1,33 @@
 h1 {
     text-align: center;
   }
+
+  .btn-pink {
+  background-color: #f85eb0ff; /* hot pink */
+  color: white;
+}
+
+.btn-pink:hover {
+  background-color: #ff1493; /* deep pink */
+  color: white;
+}
+
+  .btn-blue {
+  background-color: #5e9fe6ff; /* Bootstrap primary blue */
+  color: white;
+}
+
+  .btn-blue:hover {
+  background-color: #007bff; /* Bootstrap primary blue on hover */
+  color: white;
+}
+
+  .btn-green {
+  background-color: #39e770ff; /* Bootstrap primary blue */
+  color: white;
+}
+
+  .btn-green:hover {
+  background-color: #32d466ff; /* Bootstrap primary blue on hover */
+  color: white;
+}
